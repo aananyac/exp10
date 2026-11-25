@@ -3,6 +3,7 @@ pipeline {
     environment {
         REGISTRY   = "localhost:5000"
         IMAGE_NAME = "student-demo-app"
+        PYTHON = "C:\\Users\\STUDENT\\AppData\\Local\\Programs\\Python\\Python313\\python.exe"
     }
     stages {
         stage('1. Checkout Code') {
