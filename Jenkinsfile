@@ -14,7 +14,7 @@ pipeline {
         stage('2. Application Build & Test') {
             steps {
                 echo "Verifying Python syntax..."
-                bat 'python -m py_compile app.py'
+                bat '"%PYTHON%" -m py_compile app.py'
             }
         }
         stage('3. Build & Tag Docker Image') {
