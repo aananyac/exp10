@@ -13,7 +13,6 @@ pipeline {
         }
         stage('2. Application Build & Test') {
             steps {
-                echo "Verifying Python syntax..."
               bat' "C:\\Users\\STUDENT\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m py_compile app.py'
             }
         }
